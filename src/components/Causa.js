@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
 import './Causa.css';
 import imagenCausa from '../imgs/DEFORESTACION_1.jpg';
+import imagenOrganizador from '../imgs/hcl-logo.jpg';
+
+// Component imports
+import { Line } from 'rc-progress';
 
 class Causa extends Component {
   render() {
@@ -18,7 +22,11 @@ class Causa extends Component {
           <div className='container'>
             <div className='causa-tarjeta-bottom-info'>
               <div className='causa-tarjeta-bottom-info-left'>
-                <p>image</p>
+                <img
+                  className='causa-tarjeta-bottom-imagen'
+                  src={imagenOrganizador}
+                  alt='Imagen del organizador de la causa'
+                />
               </div>
 
               <div className='causa-tarjeta-bottom-info-right'>
@@ -32,13 +40,16 @@ class Causa extends Component {
             </div>
 
             <div className='causa-tarjeta-bottom-extra'>
-              <div className='causa-tarjeta-bottom-extra-barra barra-progreso-voluntarios'>
-                barra aqui
-              </div>
+              <Line
+                percent='50'
+                strokeWidth='4'
+                trailWidth='3'
+                strokeColor='#FF8330'
+              />
 
-              <div className='causa-tarjeta-bottom-extra-num-voluntarios'>
-                <p>250 voluntarios</p>
-              </div>
+              <p className='causa-tarjeta-bottom-extra-num-voluntarios'>
+                250 voluntarios
+              </p>
             </div>
           </div>
         </div>

@@ -18,6 +18,8 @@ class App extends Component {
             <div className='app-toplayout'>
               <ProximasCausas />
             </div>
+
+            
           </div>
         </div>
       </Router>
