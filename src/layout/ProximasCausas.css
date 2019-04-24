@@ -1,5 +1,27 @@
+.proximascausas {
+  background: #c9243d;
+  background: -moz-linear-gradient(-45deg, #c9243d 0%, #f7766f 100%);
+  background: -webkit-linear-gradient(-45deg, #c9243d 0%, #f7766f 100%);
+  background: linear-gradient(135deg, #c9243d 0%, #f7766f 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c9243d', endColorstr='#f7766f',GradientType=1 );
+
+  position: absolute;
+  width: 100%;
+  top: 69.5px;
+  left: 0px;
+  right: 0px;
+
+  padding-bottom: 40px;
+  padding-top: 20px;
+}
+
 .proximascausas-causas-grid {
   display: grid;
   grid-template-columns: repeat(5, auto);
   grid-gap: 30px;
+}
+
+.proximascausas-titulo {
+  font-size: 25px;
+  color: #f6f6fd;
 }

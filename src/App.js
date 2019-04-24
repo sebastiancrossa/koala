@@ -15,8 +15,9 @@ class App extends Component {
           <Navbar />
 
           <div className='container'>
-            <div className='app-toplayout' />
-            <ProximasCausas />
+            <div className='app-toplayout'>
+              <ProximasCausas />
+            </div>
           </div>
         </div>
       </Router>
