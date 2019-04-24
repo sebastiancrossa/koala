@@ -5,12 +5,10 @@
   background: linear-gradient(135deg, #c9243d 0%, #f7766f 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c9243d', endColorstr='#f7766f',GradientType=1 );
 
-  position: absolute;
-  width: 100%;
-  top: 69.5px;
-  left: 0px;
-  right: 0px;
+  width: 100vw;
 
+  margin-left: -67px;
+  margin-top: -5px;
   padding-bottom: 40px;
   padding-top: 20px;
 }

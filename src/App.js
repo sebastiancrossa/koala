@@ -7,6 +7,10 @@ import './App.css';
 import Navbar from './layout/Navbar';
 import ProximasCausas from './layout/ProximasCausas';
 
+import CausasDestacadas from './layout/CausasDestacadas';
+import CausasAmbientales from './layout/CausasAmbientales';
+import CausasComunitarias from './layout/CausasComunitarias';
+
 class App extends Component {
   render() {
     return (
@@ -19,7 +23,11 @@ class App extends Component {
               <ProximasCausas />
             </div>
 
-            
+            <div className='app-rest'>
+              <CausasDestacadas />
+              <CausasAmbientales />
+              <CausasComunitarias />
+            </div>
           </div>
         </div>
       </Router>
