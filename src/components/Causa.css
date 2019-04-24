@@ -16,6 +16,16 @@
   overflow: hidden;
 }
 
+.causa-tarjeta-bottom-imagen {
+  width: 80px;
+  height: 80px;
+
+  border-radius: 50%;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+
+  margin-top: 15px;
+}
+
 .causa-tarjeta-bottom-info {
   display: grid;
   grid-template-columns: repeat(2, auto);
@@ -29,4 +39,11 @@
 .causa-tarjeta-bottom-info-right-fecha {
   margin-top: 5px;
   color: #acabab;
+  font-weight: 600;
+}
+
+.causa-tarjeta-bottom-extra-num-voluntarios {
+  text-align: end;
+  margin-top: 8px;
+  font-weight: 600;
 }
