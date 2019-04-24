@@ -7,7 +7,7 @@ class Navbar extends Component {
     return (
       <nav className='header-nav'>
         <div className='container navbar-header-display'>
-          <h3 className='header-nav-title'>Koala</h3>
+          <h3 className='header-nav-title'>KOALA</h3>
 
           <div>
             <ul className='header-nav-ul'>

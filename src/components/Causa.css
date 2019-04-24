@@ -1,0 +1,31 @@
+.causa-tarjeta {
+  background-color: white;
+  width: 345px;
+  height: 370px;
+
+  border-radius: 5px;
+
+  box-shadow: 0px 3px 50px rgba(0, 0, 0, 0.05);
+
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 45% 55%;
+}
+
+.causa-tarjeta-top {
+  overflow: hidden;
+}
+
+.causa-tarjeta-bottom-info {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-gap: 20px;
+}
+
+.causa-tarjeta-bottom-info-right-titulo {
+  margin-bottom: 0px;
+}
+
+.causa-tarjeta-bottom-info-right-fecha {
+  margin-top: 5px;
+}
