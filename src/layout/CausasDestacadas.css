@@ -1,0 +1,8 @@
+.causasDestacadas {
+  margin-top: 70px;
+}
+
+.causasDestacadas-causas-grid {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+}

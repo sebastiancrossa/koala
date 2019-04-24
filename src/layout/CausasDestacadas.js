@@ -1,8 +1,22 @@
 import React, { Component } from 'react';
+import './CausasDestacadas.css';
+
+// Component Imports
+import Causa from '../components/Causa';
 
 class CausasDestacadas extends Component {
   render() {
-    return <h1>Causas Destacadas</h1>;
+    return (
+      <div className='causasDestacadas'>
+        <h1>Causas Destacadas</h1>
+
+        <div className='causasDestacadas-causas-grid'>
+          <Causa />
+          <Causa />
+          <Causa />
+        </div>
+      </div>
+    );
   }
 }
 

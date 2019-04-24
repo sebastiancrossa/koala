@@ -1,10 +1,20 @@
 import React, { Component } from 'react';
+import './CausasComunitarias.css';
+
+// Component Importsa
+import Causa from '../components/Causa';
 
 class CausasComunitarias extends Component {
   render() {
     return (
-      <div>
+      <div className='causasComunitarias'>
         <h1>Causas Comunitarias</h1>
+
+        <div className='causasComunitarias-causas-grid'>
+          <Causa />
+          <Causa />
+          <Causa />
+        </div>
       </div>
     );
   }
