@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './Causa.css';
-import imagenCausa from '../imgs/DEFORESTACION_1.jpg';
+import imagenCausa from '../imgs/deforestation_friends.png';
 import imagenOrganizador from '../imgs/hcl-logo.jpg';
 
 import { withRouter } from 'react-router-dom';
