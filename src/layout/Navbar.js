@@ -9,7 +9,9 @@ class Navbar extends Component {
     return (
       <nav className='header-nav'>
         <div className='container navbar-header-display'>
-          <h3 className='header-nav-title'>KOALA</h3>
+          <Link to='/' className='header-nav-title'>
+            KOALA
+          </Link>
 
           <div>
             <ul className='header-nav-ul'>

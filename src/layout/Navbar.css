@@ -6,6 +6,9 @@
 .header-nav-title {
   color: #3b4154;
   align-self: center;
+
+  font-weight: 600;
+  font-size: 20px;
 }
 
 .navbar-header-display {
