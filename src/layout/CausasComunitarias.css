@@ -1,0 +1,9 @@
+.causasComunitarias {
+  margin-top: 70px;
+  margin-bottom: 50px;
+}
+
+.causasComunitarias-causas-grid {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+}

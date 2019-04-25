@@ -9,7 +9,7 @@ class CausasAmbientales extends Component {
   render() {
     return (
       <div className='causasAmbientales'>
-        <h1>Causas ambientales</h1>
+        <h1 className='cause-title'>Causas ambientales</h1>
 
         <div className='causasAmbientales-causas-grid'>
           <Causa />

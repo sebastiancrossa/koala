@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import './Navbar.css';
 import { Link } from 'react-router-dom';
 
+import fotoPerfil from '../imgs/perfil.jpg';
+
 class Navbar extends Component {
   render() {
     return (
@@ -11,14 +13,24 @@ class Navbar extends Component {
 
           <div>
             <ul className='header-nav-ul'>
-              <Link to='/' className='header-nav-li'>
+              <Link
+                to='/'
+                className='header-nav-li header-nav-li-vertical-center'
+              >
                 Explora
               </Link>
-              <Link to='/' className='header-nav-li'>
+              <Link
+                to='/'
+                className='header-nav-li header-nav-li-vertical-center'
+              >
                 Sebastian Crossa
               </Link>
               <Link to='/' className='header-nav-li'>
-                imagen
+                <img
+                  src={fotoPerfil}
+                  className='header-nav-li-profile-pic'
+                  alt='Foto de perfil de usuario iniciado sesion'
+                />
               </Link>
             </ul>
           </div>
