@@ -19,7 +19,7 @@ class Causa extends Component {
         <div className='causa-tarjeta-top'>
           <img
             className='causa-tarjeta-top-imagen'
-            src={imagenCausa}
+            src={this.props.imgCausa}
             alt='Imagen de la causa'
             onClick={this.handleClick}
           />

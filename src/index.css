@@ -17,6 +17,14 @@ body {
   font-size: 25px;
 }
 
+.causa-tarjeta-top-imagen {
+  position: absolute;
+  left: -31px;
+  top: -20px;
+  width: 118%;
+  height: 136%;
+}
+
 .participacion-container {
   width: 87%;
   margin: auto;
