@@ -6,15 +6,54 @@ import organizerImage from '../imgs/hcl-logo.jpg';
 import causeImage from '../imgs/DEFORESTACION_1.jpg';
 
 // Component imports
-import NavbarOpposite from '../layout/NavbarOpposite';
+import Navbar from '../layout/NavbarOpposite';
 import Causa from '../components/Causa';
 import { Line } from 'rc-progress';
 
+import Modal from 'react-modal';
+import { Link } from 'react-router-dom';
+
+const customStyles = {
+  content: {
+    top: '50%',
+    left: '50%',
+    right: 'auto',
+    bottom: 'auto',
+    marginRight: '-50%',
+    transform: 'translate(-50%, -50%)'
+  }
+};
+
 class CausaSeleccionada extends Component {
+  constructor() {
+    super();
+
+    this.state = {
+      modalIsOpen: false
+    };
+
+    this.openModal = this.openModal.bind(this);
+    this.afterOpenModal = this.afterOpenModal.bind(this);
+    this.closeModal = this.closeModal.bind(this);
+  }
+
+  openModal() {
+    this.setState({ modalIsOpen: true });
+  }
+
+  afterOpenModal() {
+    // references are now sync'd and can be accessed.
+    this.subtitle.style.color = '#3B4154';
+  }
+
+  closeModal() {
+    this.setState({ modalIsOpen: false });
+  }
+
   render() {
     return (
       <div className='causaSeleccionada'>
-        <NavbarOpposite />
+        <Navbar />
 
         <div className='container'>
           <div className='causaSeleccionada-columnas'>
@@ -109,9 +148,41 @@ class CausaSeleccionada extends Component {
                     227 voluntarios
                   </p>
 
-                  <button className='causaSeleccionada-columna-derecha-info-btnParticipa'>
+                  <button
+                    onClick={this.openModal}
+                    className='causaSeleccionada-columna-derecha-info-btnParticipa'
+                  >
                     PARTICIPA
                   </button>
+
+                  <Modal
+                    isOpen={this.state.modalIsOpen}
+                    onAfterOpen={this.afterOpenModal}
+                    onRequestClose={this.closeModal}
+                    style={customStyles}
+                    contentLabel='Login Modal'
+                  >
+                    <h2
+                      className='header-nav-li-modal-h2'
+                      ref={subtitle => (this.subtitle = subtitle)}
+                    >
+                      Log in with...
+                    </h2>
+                    <div className='header-nav-li-modal-social-list'>
+                      <button className='header-nav-li-modal-social-button'>
+                        Facebook
+                      </button>
+                      <button className='header-nav-li-modal-social-button'>
+                        Google
+                      </button>
+                      <Link
+                        to='/participacion'
+                        className='header-nav-li-modal-social-button header-nav-li-modal-social-button-twitter'
+                      >
+                        Twitter
+                      </Link>
+                    </div>
+                  </Modal>
                 </div>
               </div>
             </div>
