@@ -10,6 +10,8 @@ import Navbar from '../layout/NavbarOpposite';
 import Causa from '../components/Causa';
 import { Line } from 'rc-progress';
 
+import imagenCausa1 from '../imgs/turtles.png';
+
 import Modal from 'react-modal';
 import { Link } from 'react-router-dom';
 
@@ -257,10 +259,12 @@ class CausaSeleccionada extends Component {
             </p>
 
             <div className='causaSeleccionada-causasSimilares-grid'>
-              <Causa />
-              <Causa />
-              <Causa />
-              <Causa />
+              <Causa
+                title='Voluntariado con Tortugas Marinas en Mexico'
+                imgCausa={imagenCausa1}
+                fecha='Sabado 9 de Agosto 2019, 9:00hrs'
+                voluntarios='536'
+              />
             </div>
           </div>
         </div>
