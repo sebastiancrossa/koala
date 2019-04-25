@@ -21,6 +21,15 @@
 
 .causa-tarjeta-top {
   overflow: hidden;
+  position: relative;
+}
+
+.causa-tarjeta-top-imagen {
+  position: absolute;
+  left: -35px;
+  top: -20px;
+  width: 120%;
+  height: 135%;
 }
 
 .causa-tarjeta-bottom-imagen {
