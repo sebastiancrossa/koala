@@ -12,7 +12,7 @@ class ProximasCausas extends Component {
     return (
       <div className='proximascausas'>
         <div className='container'>
-          <h2 className='proximascausas-titulo'>Proximas causas a asistir</h2>
+          <h2 className='proximascausas-titulo'>Top 3 causas a asistir</h2>
 
           <div className='proximascausas-causas-grid'>
             <Causa

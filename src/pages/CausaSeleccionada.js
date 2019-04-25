@@ -10,6 +10,8 @@ import Navbar from '../layout/NavbarOpposite';
 import Causa from '../components/Causa';
 import { Line } from 'rc-progress';
 
+import imagenCausa1 from '../imgs/turtles.png';
+
 import Modal from 'react-modal';
 import { Link } from 'react-router-dom';
 
@@ -139,13 +141,13 @@ class CausaSeleccionada extends Component {
                     Viernes 18 de Mayo 2019, 14:00hrs
                   </p>
                   <Line
-                    percent='50'
+                    percent={250 * 0.1}
                     strokeWidth='4'
                     trailWidth='3'
                     strokeColor='#FF8330'
                   />
                   <p className='causaSeleccionada-columna-derecha-info-voluntarios'>
-                    227 voluntarios
+                    250 voluntarios
                   </p>
 
                   <button
@@ -257,10 +259,12 @@ class CausaSeleccionada extends Component {
             </p>
 
             <div className='causaSeleccionada-causasSimilares-grid'>
-              <Causa />
-              <Causa />
-              <Causa />
-              <Causa />
+              <Causa
+                title='Voluntariado con Tortugas Marinas en Mexico'
+                imgCausa={imagenCausa1}
+                fecha='Sabado 9 de Agosto 2019, 9:00hrs'
+                voluntarios='536'
+              />
             </div>
           </div>
         </div>
