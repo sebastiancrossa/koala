@@ -5,6 +5,36 @@
 
 /* COLUMNA IZQUIERDA */
 .causaSeleccionada-columna-izquierda {
+  background: pink;
+
+  margin-top: 70px;
+}
+
+.causaSeleccionada-columna-izquierda-container {
+  width: 95%;
+  max-width: 1600px;
+}
+
+.causaSeleccionada-columna-izquierda-galeria {
+  width: 95%;
+}
+
+.causaSeleccionada-columna-izquierda-texto-especifico {
+  margin-top: 55px;
+}
+
+.causaSeleccionada-columna-izquierda-texto-titulo,
+.causaSeleccionada-actualizaciones-titulo {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.causaSeleccionada-columna-izquierda-texto-descripcion {
+  color: #414041;
+}
+
+.causaSeleccionada-columna-izquierda-p2 {
+  margin-bottom: 50px;
 }
 
 /* COLUMNA DERECHA */
@@ -72,4 +102,9 @@
   background-color: #ff8330;
 
   cursor: pointer;
+}
+
+/* Actualizaciones */
+.causaSeleccionada-actualizaciones {
+  margin-top: 90px;
 }
