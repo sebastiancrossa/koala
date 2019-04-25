@@ -12,8 +12,17 @@ class CausasAmbientales extends Component {
         <h1 className='cause-title'>Causas ambientales</h1>
 
         <div className='causasAmbientales-causas-grid'>
-          <Causa />
-          <Causa />
+          <Causa
+            onClick={this.routeChange}
+            title="Reforestacion del bosque 'La Primavera'"
+            fecha='Viernes 13 de Mayo 2019, 15:00hrs'
+            voluntarios='250'
+          />
+          <Causa
+            title='Voluntariado con Tortugas Marinas en Mexico'
+            fecha='Sabado 9 de Agosto 2019, 9:00hrs'
+            voluntarios='536'
+          />
         </div>
       </div>
     );

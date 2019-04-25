@@ -38,24 +38,24 @@ class Causa extends Component {
 
               <div className='causa-tarjeta-bottom-info-right'>
                 <h3 className='causa-tarjeta-bottom-info-right-titulo'>
-                  Reforestacion del Bosque "La Primavera"
+                  {this.props.title}
                 </h3>
                 <p className='causa-tarjeta-bottom-info-right-fecha'>
-                  Viernes 18 de Mayo 2019, 14:00hrs
+                  {this.props.fecha}
                 </p>
               </div>
             </div>
 
             <div className='causa-tarjeta-bottom-extra'>
               <Line
-                percent='50'
+                percent={this.props.voluntarios * 0.1}
                 strokeWidth='4'
                 trailWidth='3'
                 strokeColor='#FF8330'
               />
 
               <p className='causa-tarjeta-bottom-extra-num-voluntarios'>
-                250 voluntarios
+                {this.props.voluntarios} voluntarios
               </p>
             </div>
           </div>
