@@ -1,0 +1,75 @@
+.causaSeleccionada-columnas {
+  display: grid;
+  grid-template-columns: 60% 40%;
+}
+
+/* COLUMNA IZQUIERDA */
+.causaSeleccionada-columna-izquierda {
+}
+
+/* COLUMNA DERECHA */
+.causaSeleccionada-columna-derecha {
+  padding-top: 70px;
+}
+
+.causaSeleccionada-columna-derecha-organizador {
+  display: block;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.causaSeleccionada-columna-derecha-organizador-foto {
+  width: 100px;
+  height: 100px;
+
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+
+  border-radius: 50%;
+  justify-self: center;
+}
+
+.causaSeleccionada-columna-derecha-organizador-nombre {
+  font-weight: 600;
+  font-size: 25px;
+
+  color: #9c9999;
+
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+.causaSeleccionada-columna-derecha-info-titulo {
+  margin-bottom: 0px;
+}
+
+.causaSeleccionada-columna-derecha-info-fecha {
+  color: #acabab;
+  font-weight: 600;
+
+  margin-top: 10px;
+}
+
+.causaSeleccionada-columna-derecha-info-voluntarios {
+  font-weight: 600;
+  text-align: right;
+
+  margin-top: 10px;
+}
+
+.causaSeleccionada-columna-derecha-info-btnParticipa {
+  width: 100%;
+
+  margin-top: 20px;
+  padding: 25px 0 25px 0;
+
+  border: 0px;
+  border-radius: 5px;
+
+  color: white;
+  font-weight: 600;
+  font-size: 18px;
+
+  background-color: #ff8330;
+
+  cursor: pointer;
+}
