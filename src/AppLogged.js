@@ -1,24 +1,21 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import { Link } from 'react-dom';
-import './App.css';
-
-import history from './utils/history';
+import './AppLogged.css';
 
 // Component imports
-import NavbarOpposite from './layout/NavbarOpposite';
+import Navbar from './layout/Navbar';
 import ProximasCausas from './layout/ProximasCausas';
 
 import CausasDestacadas from './layout/CausasDestacadas';
 import CausasAmbientales from './layout/CausasAmbientales';
 import CausasComunitarias from './layout/CausasComunitarias';
 
-class App extends Component {
+class AppLogged extends Component {
   render() {
     return (
-      <Router history={history}>
+      <Router>
         <div className='app'>
-          <NavbarOpposite />
+          <Navbar />
 
           <div className='container'>
             <div className='app-toplayout'>
@@ -37,4 +34,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default AppLogged;

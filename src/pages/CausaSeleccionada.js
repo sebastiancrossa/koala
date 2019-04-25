@@ -6,7 +6,7 @@ import organizerImage from '../imgs/hcl-logo.jpg';
 import causeImage from '../imgs/DEFORESTACION_1.jpg';
 
 // Component imports
-import Navbar from '../layout/Navbar';
+import NavbarOpposite from '../layout/NavbarOpposite';
 import Causa from '../components/Causa';
 import { Line } from 'rc-progress';
 
@@ -14,7 +14,7 @@ class CausaSeleccionada extends Component {
   render() {
     return (
       <div className='causaSeleccionada'>
-        <Navbar />
+        <NavbarOpposite />
 
         <div className='container'>
           <div className='causaSeleccionada-columnas'>

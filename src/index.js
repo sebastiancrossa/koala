@@ -8,12 +8,14 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 // Component imports
 import CausaSeleccionada from './pages/CausaSeleccionada';
+import AppLogged from './AppLogged';
 
 const routing = (
   <Router forceRefresh={true}>
     <div>
       <Switch>
         <Route exact path='/' component={() => <App />} />
+        <Route exact path='/logged-in' component={AppLogged} />
         <Route exact path='/causa' component={CausaSeleccionada} />
       </Switch>
     </div>
