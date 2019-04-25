@@ -7,6 +7,7 @@ import causeImage from '../imgs/DEFORESTACION_1.jpg';
 
 // Component imports
 import Navbar from '../layout/Navbar';
+import Causa from '../components/Causa';
 import { Line } from 'rc-progress';
 
 class CausaSeleccionada extends Component {
@@ -120,6 +121,76 @@ class CausaSeleccionada extends Component {
             <p className='causaSeleccionada-actualizaciones-titulo'>
               Actualizaciónes
             </p>
+
+            <div className='causaSeleccionada-actualizaciones-posts'>
+              <div className='causaSeleccionada-actualizaciones-post'>
+                <div className='causaSeleccionbada-actualizaciones-post-grid'>
+                  <div className='causaSeleccionada-actualizaciones-post-grid-izquierda'>
+                    <img
+                      src={causeImage}
+                      className='causaSeleccionada-actualizaciones-post-grid-izquierda-imagen'
+                      alt='Imagen actualizacion'
+                    />
+                  </div>
+
+                  <div className='causaSeleccionada-actualizaciones-post-grid-derecha'>
+                    <div className='causaSeleccionada-actualizaciones-post-grid-derecha-container'>
+                      <div className='causaSeleccionada-actualizaciones-post-grid-derecha-titulo'>
+                        Pudimos impedir un intento de deforestamiento
+                      </div>
+                      <div className='causaSeleccionada-actualizaciones-post-grid-derecha-fecha'>
+                        Lunes, 23 de Mayo 2019
+                      </div>
+                      <div className='causaSeleccionada-actualizaciones-post-grid-derecha-descripcion'>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Morbi aliquam leo eget nisi tempor, dictum venenatis
+                        diam finibus. Maecenas rhoncus mollis commodo.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className='causaSeleccionada-actualizaciones-post'>
+                <div className='causaSeleccionbada-actualizaciones-post-grid'>
+                  <div className='causaSeleccionada-actualizaciones-post-grid-izquierda'>
+                    <img
+                      src={causeImage}
+                      className='causaSeleccionada-actualizaciones-post-grid-izquierda-imagen'
+                      alt='Imagen actualizacion'
+                    />
+                  </div>
+
+                  <div className='causaSeleccionada-actualizaciones-post-grid-derecha'>
+                    <div className='causaSeleccionada-actualizaciones-post-grid-derecha-container'>
+                      <div className='causaSeleccionada-actualizaciones-post-grid-derecha-titulo'>
+                        Pudimos impedir un intento de deforestamiento
+                      </div>
+                      <div className='causaSeleccionada-actualizaciones-post-grid-derecha-fecha'>
+                        Lunes, 23 de Mayo 2019
+                      </div>
+                      <div className='causaSeleccionada-actualizaciones-post-grid-derecha-descripcion'>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Morbi aliquam leo eget nisi tempor, dictum venenatis
+                        diam finibus. Maecenas rhoncus mollis commodo.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className='causaSeleccionada-causasSimilares'>
+            <p className='causaSeleccionada-actualizaciones-titulo'>
+              Causas Similares
+            </p>
+
+            <div className='causaSeleccionada-causasSimilares-grid'>
+              <Causa />
+              <Causa />
+              <Causa />
+              <Causa />
+            </div>
           </div>
         </div>
       </div>
