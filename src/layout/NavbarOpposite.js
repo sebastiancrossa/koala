@@ -58,7 +58,7 @@ class NavbarOpposite extends Component {
                 Explora
               </Link>
               <button
-                className='header-nav-li header-nav-li-vertical-center'
+                className='header-nav-li header-nav-li-vertical-center header-nav-li header-nav-li-vertical-center-signup'
                 onClick={this.openModal}
               >
                 Sign Up
@@ -84,9 +84,12 @@ class NavbarOpposite extends Component {
                   <button className='header-nav-li-modal-social-button'>
                     Google
                   </button>
-                  <button className='header-nav-li-modal-social-button'>
+                  <Link
+                    to='/logged-in'
+                    className='header-nav-li-modal-social-button header-nav-li-modal-social-button-twitter'
+                  >
                     Twitter
-                  </button>
+                  </Link>
                 </div>
               </Modal>
             </ul>

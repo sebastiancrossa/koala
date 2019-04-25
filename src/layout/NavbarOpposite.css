@@ -43,6 +43,11 @@
   grid-template-columns: auto;
 }
 
+.header-nav-li-vertical-center-signup {
+  background: none;
+  border: none;
+}
+
 .header-nav-li-modal-social-button {
   border: none;
   border-radius: 5px;
@@ -54,4 +59,8 @@
   margin-bottom: 15px;
 
   cursor: pointer;
+}
+
+.header-nav-li-modal-social-button-twitter {
+  text-align: center;
 }
