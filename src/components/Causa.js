@@ -3,10 +3,16 @@ import './Causa.css';
 import imagenCausa from '../imgs/DEFORESTACION_1.jpg';
 import imagenOrganizador from '../imgs/hcl-logo.jpg';
 
+import { withRouter } from 'react-router-dom';
+
 // Component imports
 import { Line } from 'rc-progress';
 
 class Causa extends Component {
+  handleClick = () => {
+    this.props.history.push('/causa');
+  };
+
   render() {
     return (
       <div className='causa-tarjeta'>
@@ -15,6 +21,7 @@ class Causa extends Component {
             className='causa-tarjeta-top-imagen'
             src={imagenCausa}
             alt='Imagen de la causa'
+            onClick={this.handleClick}
           />
         </div>
 
@@ -58,4 +65,4 @@ class Causa extends Component {
   }
 }
 
-export default Causa;
+export default withRouter(Causa);

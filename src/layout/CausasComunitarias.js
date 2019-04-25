@@ -8,7 +8,7 @@ class CausasComunitarias extends Component {
   render() {
     return (
       <div className='causasComunitarias'>
-        <h1 class='cause-title'>Causas Comunitarias</h1>
+        <h1 className='cause-title'>Causas Comunitarias</h1>
 
         <div className='causasComunitarias-causas-grid'>
           <Causa />

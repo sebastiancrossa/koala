@@ -3,6 +3,8 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { Link } from 'react-dom';
 import './App.css';
 
+import history from './utils/history';
+
 // Component imports
 import Navbar from './layout/Navbar';
 import ProximasCausas from './layout/ProximasCausas';
@@ -14,7 +16,7 @@ import CausasComunitarias from './layout/CausasComunitarias';
 class App extends Component {
   render() {
     return (
-      <Router>
+      <Router history={history}>
         <div className='app'>
           <Navbar />
 

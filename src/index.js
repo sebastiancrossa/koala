@@ -6,11 +6,15 @@ import * as serviceWorker from './serviceWorker';
 
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
+// Component imports
+import CausaSeleccionada from './pages/CausaSeleccionada';
+
 const routing = (
-  <Router>
+  <Router forceRefresh={true}>
     <div>
       <Switch>
-        <Route exact path='/' component={App} />
+        <Route exact path='/' component={() => <App />} />
+        <Route exact path='/causa' component={CausaSeleccionada} />
       </Switch>
     </div>
   </Router>
