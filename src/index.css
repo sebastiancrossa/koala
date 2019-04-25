@@ -17,6 +17,46 @@ body {
   font-size: 25px;
 }
 
+.participacion-container {
+  width: 87%;
+  margin: auto;
+
+  margin-top: 110px;
+}
+
+.participacion-card {
+  background: #f6f6fd;
+  width: 430px;
+  height: 550px;
+
+  border-radius: 5px;
+  box-shadow: 0px 3px 30px rgba(0, 0, 0, 0.1);
+}
+
+.participacion-card-titulo {
+  text-align: center;
+  font-size: 30px;
+}
+
+.participacion-card-descripcion {
+  font-size: 19px;
+}
+
+.participacion-card-button {
+  padding: 20px 70px;
+  border-radius: 5px;
+
+  display: block;
+  margin: 60px auto 0 auto;
+
+  text-align: center;
+  font-size: 20px;
+
+  color: white;
+
+  background: #ff8630;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
